@@ -1,2 +1,2 @@
-intraday.db
-prices.db
+*.db
+data\__pycache__\
