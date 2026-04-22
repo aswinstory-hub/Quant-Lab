@@ -16,8 +16,8 @@ SEED_START = datetime.datetime(2018, 1, 1)
 SEED_END   = datetime.datetime(2022, 12, 31)
 
 # Zerodha credentials
-API_KEY = "74rj48jkshla0dgo"
-ACCESS_TOKEN = "JQBtxRrPYLHobjTSFDUU4chcLH8nBVJj"
+API_KEY = str(input("Enter API key: "))
+ACCESS_TOKEN = str(input("Enter Access Token: "))
 
 # API safety
 REQUEST_SLEEP = 0.25          # seconds between symbols
@@ -74,10 +74,10 @@ try:
         # UPDATE RUN
         # ----------------------------------------------
         start_date = latest_date + datetime.timedelta(days=1)
-        end_date = datetime.datetime.today()
+        end_date = datetime.date.today()
 
         print(f"Database last date: {latest_date}")
-        print(f"Updating from {start_date.date()} to {end_date.date()}")
+        print(f"Updating from {start_date} to {end_date}")
 
         if start_date > end_date:
             print("Database already up to date.")
