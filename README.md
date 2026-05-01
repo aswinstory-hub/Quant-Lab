@@ -14,3 +14,11 @@
 |-README.md
 
 ```
+
+## Goals
+
+- [x] Basic Historical Charting
+- [ ] Basic Strategy
+- [ ] Data module
+- [ ] Vector module Prototype
+- [ ] Main Contorl Panel
