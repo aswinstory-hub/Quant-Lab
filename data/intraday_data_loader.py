@@ -13,8 +13,8 @@ DB_PATH = "intraday.db"
 TABLE_NAME = "prices_intraday"
 INTERVAL = "minute"          # minute / 5minute / 15minute etc
 
-API_KEY = "74rj48jkshla0dgo"
-ACCESS_TOKEN = "JQBtxRrPYLHobjTSFDUU4chcLH8nBVJj"
+API_KEY = str(input("Enter API key: "))
+ACCESS_TOKEN = str(input("Enter Access Token: "))
 
 # ==================================================
 # KITE SETUP
